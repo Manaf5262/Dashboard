@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col text-center">
+            <h1 class="display-4 "><span class="badge bg-light bordred text-dark">إضافة منتج جديد</span> </h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-success" onclick="AddNewItems()">  <i class="fs-4 bi-cart-plus p-2"></i> أضافة منتج </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" tabindex="-1" id="newproducts">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"> إضافة منتج جديد </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label" for="">اسم المنتج</label>
+                            <input type="text" id="newitem" name="Name" class="form-control form-control-sm" />
+                        </div>
+                        <div class="col">
+                            <label class="form-label" for="">وصف المنتج </label>
+                            <input type="text" id="description" name="Description" class="form-control form-control-sm" />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إلغاء الأمر </button>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">حفظ</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
